@@ -25,26 +25,13 @@
 		},
 		{
 			"LogName": "Abigail Schedule Changes",
-			"Action": "EditData",
-			"Target": "Characters/schedules/Abigail",
-			"Entries": {
-				"marriage_spring_4": "",
-				"marriage_summer_4": "",
-				"marriage_fall_4": "",
-				"marriage_winter_4": "",
-				"spring_4": "",
-				"summer_4": "",
-				"fall_4": "",
-				"winter_4": ""
-			}
+			"Action": "Include",
+			"FromFile": "assets/schedules.json"
 		},
 		{
 			"LogName": "Abigail Dialogue Changes",
-			"Action": "EditData",
-			"Target": "Strings/schedules/Abigail",
-			"Entries": {
-				"spring_4.000": "Ugh... I have a doctor's appointment later.$s#$e#I hate needles...$s"
-			}
+			"Action": "Include",
+			"FromFile": "assets/dialogue.json"
 		}
 	]
 }

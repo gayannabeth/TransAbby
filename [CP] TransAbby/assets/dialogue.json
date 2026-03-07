@@ -1,0 +1,55 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"Entries": {
+				"spring_4.000": "Ugh... I have a doctor's appointment later.$s#$e#I hate needles...$s",
+				"spring_4.003": "I'm just waiting for my meds now.$0",
+				"marriage.other_4.000": "I'm just here to pick up my HRT!$h",
+				"marriage.winter_4.001": "The forest is so beautiful in the snow, isn't it?$h#$b#I'll get home safe, don't you worry sweetie.$l"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueAbigail",
+			"Entries": {
+				"spring_4": "Ugh... I have a doctor's appointment later.$s#$e#I hate needles...$s",
+				"summer_4": "Gotta go pick up my titty skittles later!$h",
+				"fall_4": "Gotta go pick up my titty skittles later!$h",
+				"winter_4": "Gotta go pick up my titty skittles later!$h"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"Entries": {
+				"other_4.000": "Picking up some meds later.$h#$e#Huh? What meds?$u#$b#That's none of your business now, is it?$u",
+				"other_4.001": "I'm just here to pick up some meds.$h#$e#Huh? What meds?$0#$b#That's none of your business now, is it?$u"
+			},
+			"When": {
+				"Hearts:Abigail": "{{Range:0, 2}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"Entries": {
+				"other_4.000": "Picking up some meds later.$h#$e#Huh? What meds?$0#$b#Maybe I'll tell you sometime...$l",
+				"other_4.001": "I'm just here to pick up some meds.$h#$e#Huh? What meds?$0#$b#Maybe I'll tell you sometimes...$l"
+			},
+			"When": {
+				"Hearts:Abigail": "{{Range:3, 14}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"Entries": {
+				"other_4.000": "Gotta go pick up my titty skittles later!$h#$b#${Wanna try some?^We can't all make our own estrogen, ya know.}$ **giggles**",
+				"other_4.001": "I'm just here to pick up my HRT!$h"
+			}
+			// TODO: make conditional based on abby_is_out flag.
+		}
+	]
+}

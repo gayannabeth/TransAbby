@@ -1,0 +1,18 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"marriage_spring_4": "1130 Hospital 13 14 0 \"Strings\\schedules\\Abigail:spring_4.001\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Abigail:spring_4.002\"/1600 Hospital 9 14 3\"Strings\\schedules\\Abigail:spring_4.003\"/1630 Town 73 54 2/1930 BusStop -1 23 3",
+				"marriage_summer_4": "930 Hospital 9 14 0 \"Strings\\schedules\\Abigail:marriage.other_4.000\"/1100 Railroad 30 45 0/1400 Mountain 49 31 1/1740 SeedShop 3 6 0 abigail_videogames/1930 BusStop -1 23 3",
+				"marriage_fall_4": "930 Hospital 9 14 0 \"Strings\\schedules\\Abigail:marriage.other_4.000\"/1100 Town 73 54 2/1600 BusStop 22 5 2/1700 BusStop -1 23 3",
+				"marriage_winter_4": "930 Hospital 9 14 0 \"Strings\\schedules\\Abigail:marriage.other_4.000\"/1100 Forest 14 40 2 \"Strings\\schedules\\Abigail:marriage.winter_4.001\"/1700 Town 47 87 0/2200 BusStop -1 23 3",
+				"spring_4": "900 SeedShop 11 5 0 \"Strings\\schedules\\Abigail:spring_4.000\"/1230 Hospital 13 14 0 \"Strings\\schedules\\Abigail:spring_4.001\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Abigail:spring_4.002\"/1600 Hospital 9 14 3\"Strings\\schedules\\Abigail:spring_4.003\"/1630 SeedShop 10 5 0/2000 SeedShop 1 9 3 abigail_sleep",
+				"summer_4": "900 SeedShop 39 5 0 \"Strings\\schedules\\Abigail:other_4.000\"/1030 Hospital 9 14 3 \"Strings\\schedules\\Abigail:other_4.001\"/1130 Railroad 30 45 0/1400 Mountain 49 31 1/1740 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"fall_4": "900 SeedShop 39 5 0 \"Strings\\schedules\\Abigail:other_4.000\"/1030 SeedShop 2 20 3 \"Strings\\schedules\\Abigail:other_4.000\"/1300 Hospital 9 14 3 \"Strings\\schedules\\Abigail:other_4.001\"/1400 BusStop 22 5 2/1700 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep",
+				"winter_4": "900 SeedShop 39 5 0 \"Strings\\schedules\\Abigail:other_4.000\"/1030 ScienceHouse 5 19 1/1430 Hospital 9 14 3 \"Strings\\schedules\\Abigail:other_4.001\"/1600 SeedShop 3 6 0 abigail_videogames/1930 SeedShop 1 9 3 abigail_sleep"
+			}
+		}
+	]
+}
