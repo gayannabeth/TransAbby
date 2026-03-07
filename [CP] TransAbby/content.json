@@ -1,0 +1,50 @@
+{
+	"Format": "2.9.0",
+	"ConfigSchema": {
+		// When false: dialogue only references depression, brief suicidal thoughts, and vague instances of transphobia
+		// When true: dialogue references the above, as well as references to a previous suicide attempt, more explicit references to transphobia and transmisogyny, and references to transphobic/transmisogynistic violence
+		"HeavierDialogue": {
+			"AllowValues": "true, false",
+			"Default": "false"
+		}
+	},
+	"Changes": [
+		{
+			"LogName": "Trans Flag",
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/abby_trans_flag.tmx",
+			"ToArea": {"X": 8, "Y": 1, "Width": 2, "Height": 1}
+		},
+		{
+			"LogName": "Trans Flag",
+			"Action": "EditMap",
+			"Target": "Maps/spouseRooms",
+			"FromFile": "assets/Maps/abby_trans_flag.tmx",
+			"ToArea": {"X": 0, "Y": 0, "Width": 2, "Height": 1}
+		},
+		{
+			"LogName": "Abigail Schedule Changes",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"marriage_spring_4": "",
+				"marriage_summer_4": "",
+				"marriage_fall_4": "",
+				"marriage_winter_4": "",
+				"spring_4": "",
+				"summer_4": "",
+				"fall_4": "",
+				"winter_4": ""
+			}
+		},
+		{
+			"LogName": "Abigail Dialogue Changes",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"Entries": {
+				"spring_4.000": "Ugh... I have a doctor's appointment later.$s#$e#I hate needles...$s"
+			}
+		}
+	]
+}
