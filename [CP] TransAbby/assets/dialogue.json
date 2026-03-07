@@ -48,8 +48,9 @@
 			"Entries": {
 				"other_4.000": "Gotta go pick up my titty skittles later!$h#$b#${Wanna try some?^We can't all make our own estrogen, ya know.}$ **giggles**",
 				"other_4.001": "I'm just here to pick up my HRT!$h"
-			}
-			// TODO: make conditional based on abby_is_out flag.
+			},
+			"When": {
+				"HasFlag": "transabby_AbigailIsOut"
 		}
 	]
 }
