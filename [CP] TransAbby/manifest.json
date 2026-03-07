@@ -1,0 +1,11 @@
+{
+	"Name": "Transgender Abigail Mod",
+	"Author": "gayannabeth",
+	"Version": "1.0.0",
+	"Description": "Abigail is now a trans girl. Changes maps schedules events and dialogue to reflect this and adds new events.",
+	"UniqueID": "gayannabeth.TransAbby",
+	"UpdateKeys": [],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}
