@@ -32,6 +32,16 @@
 			"LogName": "Abigail Dialogue Changes",
 			"Action": "Include",
 			"FromFile": "assets/dialogue.json"
+		},
+		{
+			"LogName": "Abigail can't get pregnant",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Abigail": {
+					"SpouseAdopts": true
+				}
+			}
 		}
 	]
 }
