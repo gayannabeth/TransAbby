@@ -34,14 +34,51 @@
 			"FromFile": "assets/schedules.json"
 		},
 		{
-			"LogName": "Abigail Dialogue Changes",
+			"LogName": "Dialogue Changes",
 			"Action": "Include",
-			"FromFile": "assets/dialogue.json"
+			"FromFile": "assets/Dialogue/common.json"
+		},
+		{
+			"LogName": "Dialogue Changes",
+			"Action": "Include",
+			"FromFile": "assets/Dialogue/heavy.json",
+			"When": {
+				"HeavierDialogue": "true"
+			}
+		},
+		{
+			"LogName": "Dialogue Changes",
+			"Action": "Include",
+			"FromFile": "assets/Dialogue/light.json",
+			"When": {
+				"HeavierDialogue": "false"
+			}
 		},
 		{
 			"LogName": "Pregnancy Changes",
 			"Action": "Include",
 			"FromFile": "assets/pregnancy.json"
+		},
+		{
+			"LogName": "Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/common.json"
+		},
+		{
+			"LogName": "Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/heavy.json",
+			"When": {
+				"HeavierDialogue": "true"
+			}
+		},
+		{
+			"LogName": "Events",
+			"Action": "Include",
+			"FromFile": "assets/Events/light.json",
+			"When": {
+				"HeavierDialogue": "false"
+			}
 		}
 	]
 }

@@ -1,0 +1,11 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+				"TransAbby_AbigailComingOut/Friendship Abigail 750/NPCVisibleHere Abigail": "Saloon1/-1000 -1000/farmer 28 19 1 Abigail 41 18 3 Sam 40 17 2 Sebastian 41 19 3 Caroline 17 20 0 Clint 19 23 3 Demetrius 23 22 3 Elliott 4 19 2 Emily 15 17 0 Gus 14 18 2 Harvey 18 20 0 Leah 2 20 1 Lewis 9 22 1 Marnie 8 22 1 Pam 7 18 1 Pierre 16 20 0 Robin 22 22 1 Shane 21 17 2 Willy 17 22 2/skippable/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/animate Elliott false true 200 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 18 18 19 19 18 18 19 19 18 17 16 16 16 16 16 16 16 16 16 16 16 16/animate Lewis false true 200 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 22 23 23 23 23 23 22 22 22 23 23 23 23 23 23 23 23 23 23 22/animate Robin false true 120 20 20 21 21 22 22/animate Demetrius false true 120 24 24 25 25 26 26/animate Marnie false true 180 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 23 23 22 21/pause 1000/viewport 37 19 true false/move farmer 10 0 1/pause 500/speak Abigail \"Hey, @.\"/pause 250/speak Abigail \"There's something I've been thinking about telling you.\"/pause 100/speak Abigail \"About myself.\"/message \"Abigail seems nervous about something.\"/speak Sebastian \"You can do it, Abby.$h\"/speak Sam \"We believe in you!#h\"/move farmer 1 0 1/move farmer 0 -1 1/pause 20/speak Abigail \"I'm transgender, @.\"/emote farmer 8/pause 10/speak Abigail \"I'm a trans girl, that is.$u#$b#It doesn't change anything, really, I'm still a girl. Just, ya know...$u#$b#Trans...$u\"/pause 500/end"
+			}
+		}
+	]
+}

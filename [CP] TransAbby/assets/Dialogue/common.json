@@ -36,7 +36,7 @@
 			"Target": "Strings/schedules/Abigail",
 			"Entries": {
 				"other_4.000": "Picking up some meds later.$h#$e#Huh? What meds?$0#$b#Maybe I'll tell you sometime...$l",
-				"other_4.001": "I'm just here to pick up some meds.$h#$e#Huh? What meds?$0#$b#Maybe I'll tell you sometimes...$l"
+				"other_4.001": "I'm just here to pick up some meds.$h#$e#Huh? What meds?$0#$b#Maybe I'll tell you sometime...$l"
 			},
 			"When": {
 				"Hearts:Abigail": "{{Range:3, 14}}"
@@ -46,11 +46,11 @@
 			"Action": "EditData",
 			"Target": "Strings/schedules/Abigail",
 			"Entries": {
-				"other_4.000": "Gotta go pick up my titty skittles later!$h#$b#${Wanna try some?^We can't all make our own estrogen, ya know.}$ **giggles**",
+				"other_4.000": "Gotta go pick up my titty skittles later!$h#$b#${Wanna try some?^We can't all make our own estrogen, ya know.}$ *giggles*",
 				"other_4.001": "I'm just here to pick up my HRT!$h"
 			},
 			"When": {
-				"HasFlag": "TransAbby_AbigailIsOut"
+				"HasSeenEvent": "TransAbby_AbigailComingOut"
 			}
 		}
 	]
