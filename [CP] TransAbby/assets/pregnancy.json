@@ -1,0 +1,41 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Abigail": {
+					"SpouseAdopts": false
+				}
+			},
+			"When": {
+				"PlayerGender": "Female",
+				"AbigailCanImpregnateFemaleFarmer": "true"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Abigail": {
+					"SpouseAdopts": true
+				}
+			},
+			"When": {
+				"PlayerGender": "Male"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Abigail": {
+					"SpouseAdopts": true
+				}
+			},
+			"When": {
+				"HasFlag: anyPlayer": "TransAbby_AbigailHasHadOrchi"
+			}
+		}
+	]
+}

@@ -50,7 +50,8 @@
 				"other_4.001": "I'm just here to pick up my HRT!$h"
 			},
 			"When": {
-				"HasFlag": "transabby_AbigailIsOut"
+				"HasFlag": "TransAbby_AbigailIsOut"
+			}
 		}
 	]
 }

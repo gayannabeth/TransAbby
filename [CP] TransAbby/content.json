@@ -6,6 +6,11 @@
 		"HeavierDialogue": {
 			"AllowValues": "true, false",
 			"Default": "false"
+		},
+		//Determines if Abigail can get female players pregnant BEFORE she gets her orchi done
+		"AbigailCanImpregnateFemaleFarmer": {
+			"AllowValues": "true, false",
+			"Default": "false"
 		}
 	},
 	"Changes": [
@@ -34,14 +39,9 @@
 			"FromFile": "assets/dialogue.json"
 		},
 		{
-			"LogName": "Abigail can't get pregnant",
-			"Action": "EditData",
-			"Target": "Data/Characters",
-			"Fields": {
-				"Abigail": {
-					"SpouseAdopts": true
-				}
-			}
+			"LogName": "Pregnancy Changes",
+			"Action": "Include",
+			"FromFile": "assets/pregnancy.json"
 		}
 	]
 }
