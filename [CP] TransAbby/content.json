@@ -79,6 +79,28 @@
 			"When": {
 				"HeavierDialogue": "false"
 			}
+		},
+		{
+			"LogName": "Mail",
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"TransAbby_AbbyOrchi": "Hi @.^After thinking it over, I have decided that I do want to get an orchiectomy.^I really do hope that I have your support in this.^   -Abby%item conversationTopic TransAbby_AbbyOrchi1 4%%[#]Abby's Note - Orchi"
+			}
+		},
+		{
+			"LogName": "Abby Not Talking",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Abigail": {
+					"CanSocialize": false
+				}
+			},
+			"When": {
+				"Query: {{HasDialogueAnswer |contains=TransAbby_AbigailComingOut_BadResponse}} AND NOT {{HasDialogueAnswer |contains=TransAbby_AbigailApology}}": true
+			},
+			"Update": "OnLocationChange"
 		}
 	]
 }

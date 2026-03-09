@@ -50,7 +50,26 @@
 				"other_4.001": "I'm just here to pick up my HRT!$h"
 			},
 			"When": {
-				"HasSeenEvent": "TransAbby_AbigailComingOut"
+				"Query: ({{HasSeenEvent |contains=TransAbby_AbigailComingOut}} AND NOT {{HasSeenEvent |contains=TransAbby_AbigailComingOut_BadResponse}}) OR {{HasSeenEvent |contains=TransAbby_AbigailApology}}": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries": {
+				"AcceptGift_(O)342": "Hey, how'd you know I've been craving these?$h#b#Goddamn piss pills...$u"
+			},
+			"When": {
+				"HasFlag: anyPlayer |contains=TransAbby_AbigailHasHadOrchi": "false"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries": {
+				"TransAbby_EventBridge1": "Really? That means a lot, @!$h",
+				"TransAbby_EventBridge2": "Oh...#s",
+				"TransAbby_AbbyOrchi1": "I'm really nervous, but also really, really excited.$h#$e#I wonder if they'll let me keep them in a jar...$0."
 			}
 		}
 	]
