@@ -34,7 +34,7 @@
 				}
 			},
 			"When": {
-				"HasFlag: anyPlayer": "TransAbby_AbigailHasHadOrchi"
+				"HasSeenEvent: anyPlayer": "TransAbby_AbigailOrchi4"
 			}
 		}
 	]

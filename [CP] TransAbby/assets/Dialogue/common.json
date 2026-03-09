@@ -60,7 +60,7 @@
 				"AcceptGift_(O)342": "Hey, how'd you know I've been craving these?$h#b#Goddamn piss pills...$u"
 			},
 			"When": {
-				"HasFlag: anyPlayer |contains=TransAbby_AbigailHasHadOrchi": "false"
+				"HasSeenEvent: anyPlayer |contains=TransAbby_AbigailOrchi4": "false"
 			}
 		},
 		{
