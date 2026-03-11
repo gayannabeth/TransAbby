@@ -471,10 +471,16 @@
 			"Update": "OnLocationChange"
 		},
 		{
-			"LogName": "Bonus 10 Heart Event",
+			"LogName": "Swimsuit Sprites",
 			"Action": "Load",
 			"Target": "Characters/Abigail_Swimsuit",
 			"FromFile": "assets/Characters/Abigail_Swimsuit.png"
+		},
+		{
+			"LogName": "Swimsuit Sprites",
+			"Action": "Load",
+			"Target": "Characters/Abigail_Swimsuit_InWater",
+			"FromFile": "assets/Characters/Abigail_Swimsuit_InWater.png"
 		}
 	]
 }

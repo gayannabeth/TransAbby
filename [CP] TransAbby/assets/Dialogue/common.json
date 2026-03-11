@@ -78,7 +78,8 @@
 				"questComplete_18": "I heard you reached the bottom of the mines, @.#$b#$query PLAYER_FRIENDSHIP_POINTS Current Abigail 2000#You're so h- COOL!$l#$b#You're so cool...$l|You're so cool!$h",
 				"questComplete_108": "Mom says you gave her the pumpkin we carved.#$e#Thanks!$h",
 				"questComplete_128_memory_oneweek": "Thanks again for finding mom's necklace, @.#$b#Wait, you didn't tell her I lost it, right?",
-				"firstVisit_WizardHouseBasement": "Did you find any sort of transforming magic recently, @?#$e#Huh, why do I ask?#$b#Um... no reason..."
+				"firstVisit_WizardHouseBasement": "Did you find any sort of transforming magic recently, @?#$e#Huh, why do I ask?#$b#Um... no reason...",
+				"eventSeen_{{ModId}}_TidePools_5h_memory_oneweek": "Did you find anything cool on the beach recently?"
 			}
 		},
 		{
@@ -110,7 +111,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Vincent",
 			"Entries": {
-				"eventSeen_{{ModId}}_AbigailComingOut_memory_oneweek": "Do you think when I grow up I could be a girl like Abigail?"
+				"eventSeen_{{ModId}}_AbigailComingOut_memory_oneweek": "When I grow up, I wanna become a girl like Abigail!$h"
 			}
 		},
 		{
