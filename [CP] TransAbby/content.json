@@ -11,8 +11,376 @@
 		"AbigailCanImpregnateFemaleFarmer": {
 			"AllowValues": "true, false",
 			"Default": "false"
+		},
+		"AbigailPronouns": {
+			"AllowValues": "SheHer, SheThey, TheyShe, SheIt, SheTheyIt, TheySheIt",
+			"Default": "SheHer"
 		}
 	},
+	"DynamicTokens": [
+		{
+			"Name": "AbbyPronoun_Subjective",
+			"Value": "She",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Objective",
+			"Value": "Her",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive",
+			"Value": "Her",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive2",
+			"Value": "Hers",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Reflexive",
+			"Value": "Herself",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_IsAre",
+			"Value": "She's",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_HasHave",
+			"Value": "She's",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_IsAre",
+			"Value": "She is",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_WasWere",
+			"Value": "She was",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_HasHave",
+			"Value": "She has",
+			"When": {
+				"AbigailPronouns": "SheHer"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Subjective",
+			"Value": "{{Random:She, She, She, They |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Objective",
+			"Value": "{{Random:Her, Her, Her, Them |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive",
+			"Value": "{{Random:Her, Her, Her, Their |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive2",
+			"Value": "{{Random:Hers, Hers, Hers, Theirs |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Reflexive",
+			"Value": "{{Random:Herself, Herself, Herself, Themself |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_IsAre",
+			"Value": "{{Random:She's, She's, She's, They're |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_HasHave",
+			"Value": "{{Random:She's, She's, She's, They've |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_IsAre",
+			"Value": "{{Random:She is, She is, She is, They are |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_WasWere",
+			"Value": "{{Random:She was, She was, She was, They were |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_HasHave",
+			"Value": "{{Random:She has, She has, She has, They have |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheThey"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Subjective",
+			"Value": "{{Random:She, They, They, They |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Objective",
+			"Value": "{{Random:Her, Them, Them, Them |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive",
+			"Value": "{{Random:Her, Their, Their, Their |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive2",
+			"Value": "{{Random:Hers, Theirs, Theirs, Theirs |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Reflexive",
+			"Value": "{{Random:Herself, Themself, Themself, Themself |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_IsAre",
+			"Value": "{{Random:She's, They're, They're, They're |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_HasHave",
+			"Value": "{{Random:She's, They're, They're, They've |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_IsAre",
+			"Value": "{{Random:She is, They are, They are, They are |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_WasWere",
+			"Value": "{{Random:She was, They were, They were, They were |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_HasHave",
+			"Value": "{{Random:She has, They have, They have, They have |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheyShe"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Subjective",
+			"Value": "{{Random:She, She, She, They, It |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Objective",
+			"Value": "{{Random:Her, Her, Her, Them, It |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive",
+			"Value": "{{Random:Her, Her, Her, Their, Its |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive2",
+			"Value": "{{Random:Hers, Hers, Hers, Theirs, Its |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Reflexive",
+			"Value": "{{Random:Herself, Herself, Herself, Themself, Itself |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_IsAre",
+			"Value": "{{Random:She's, She's, She's, They're, It's |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_HasHave",
+			"Value": "{{Random:She's, She's, She's, They've, It's |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_IsAre",
+			"Value": "{{Random:She is, She is, She is, They are, It is |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_WasWere",
+			"Value": "{{Random:She was, She was, She was, They were, It was |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_HasHave",
+			"Value": "{{Random:She has, She has, She has, They have, It has |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "SheTheyIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Subjective",
+			"Value": "{{Random:She, They, They, They, It |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Objective",
+			"Value": "{{Random:Her, Them, Them, Them, It |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive",
+			"Value": "{{Random:Her, Their, Their, Their, Its |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Possessive2",
+			"Value": "{{Random:Hers, Theirs, Theirs, Theirs, Its |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Reflexive",
+			"Value": "{{Random:Herself, Themself, Themself, Themself, Itself |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_IsAre",
+			"Value": "{{Random:She's, They're, They're, They're, It's |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_Contraction_HasHave",
+			"Value": "{{Random:She's, They've, They've, They've, It's |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_IsAre",
+			"Value": "{{Random:She is, They are, They are, They are, It is |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_WasWere",
+			"Value": "{{Random:She was, They were, They were, They were, It was |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		{
+			"Name": "AbbyPronoun_HasHave",
+			"Value": "{{Random:She has, They have, They have, They have, It has |key=AbbyPronouns}}",
+			"When": {
+				"AbigailPronouns": "TheySheIt"
+			}
+		},
+		//stupid verb hack thing
+		{
+			"Name": "AbbyPronoun_VerbForm",
+			"Value": "s"
+		},
+		{
+			"Name": "AbbyPronoun_VerbForm",
+			"Value": "",
+			"When": {
+				"AbbyPronoun_Subjective": "They"
+			}
+		}
+	],
 	"Changes": [
 		{
 			"LogName": "Trans Flag",
@@ -85,7 +453,7 @@
 			"Action": "EditData",
 			"Target": "Data/mail",
 			"Entries": {
-				"TransAbby_AbbyOrchi": "Hi @.^After thinking it over, I have decided that I do want to get an orchiectomy.^I really do hope that I have your support in this.^   -Abby%item conversationTopic TransAbby_AbbyOrchi1 4%%[#]Abby's Note - Orchi"
+				"{{ModId}}_AbbyOrchi": "Hi @.^After thinking it over, I have decided that I do want to get an orchiectomy.^I really do hope that I have your support in this.^   -Abby%item conversationTopic {{ModId}}_AbbyOrchi1 4%%[#]Abby's Note - Orchi"
 			}
 		},
 		{
@@ -98,9 +466,15 @@
 				}
 			},
 			"When": {
-				"Query: {{HasDialogueAnswer |contains=TransAbby_AbigailComingOut_BadResponse}} AND NOT {{HasDialogueAnswer |contains=TransAbby_AbigailApology}}": true
+				"Query: {{HasDialogueAnswer |contains={{ModId}}_AbigailComingOut_BadResponse}} AND NOT {{HasDialogueAnswer |contains={{ModId}}_AbigailApology}}": true
 			},
 			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Bonus 10 Heart Event",
+			"Action": "Load",
+			"Target": "Characters/Abigail_Swimsuit",
+			"FromFile": "assets/Characters/Abigail_Swimsuit.png"
 		}
 	]
 }

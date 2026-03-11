@@ -34,7 +34,7 @@
 				}
 			},
 			"When": {
-				"HasSeenEvent: anyPlayer": "TransAbby_AbigailOrchi4"
+				"HasSeenEvent: anyPlayer": "{{ModId}}_AbigailOrchi4"
 			}
 		}
 	]

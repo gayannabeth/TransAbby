@@ -17,7 +17,8 @@
 				"spring_4": "Ugh... I have a doctor's appointment later.$s#$e#I hate needles...$s",
 				"summer_4": "Gotta go pick up my titty skittles later!$h",
 				"fall_4": "Gotta go pick up my titty skittles later!$h",
-				"winter_4": "Gotta go pick up my titty skittles later!$h"
+				"winter_4": "Gotta go pick up my titty skittles later!$h",
+				"patio_Abigail": "%Abigail is lost in {{Lowercase: {{AbbyPronoun_Possessive}}}} music."
 			}
 		},
 		{
@@ -50,7 +51,7 @@
 				"other_4.001": "I'm just here to pick up my HRT!$h"
 			},
 			"When": {
-				"Query: ({{HasSeenEvent |contains=TransAbby_AbigailComingOut}} AND NOT {{HasSeenEvent |contains=TransAbby_AbigailComingOut_BadResponse}}) OR {{HasSeenEvent |contains=TransAbby_AbigailApology}}": true
+				"HasSeenEvent": "{{ModId}}_AbigailComingOut"
 			}
 		},
 		{
@@ -60,16 +61,70 @@
 				"AcceptGift_(O)342": "Hey, how'd you know I've been craving these?$h#b#Goddamn piss pills...$u"
 			},
 			"When": {
-				"HasSeenEvent: anyPlayer |contains=TransAbby_AbigailOrchi4": "false"
+				"HasSeenEvent: anyPlayer |contains={{ModId}}_AbigailOrchi4": "false"
 			}
 		},
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Abigail",
 			"Entries": {
-				"TransAbby_EventBridge1": "Really? That means a lot, @!$h",
-				"TransAbby_EventBridge2": "Oh...#s",
-				"TransAbby_AbbyOrchi1": "I'm really nervous, but also really, really excited.$h#$e#I wonder if they'll let me keep them in a jar...$0."
+				"{{ModId}}_EventBridge1": "Really? That means a lot, @!$h",
+				"{{ModId}}_EventBridge2": "Oh...#s",
+				"{{ModId}}_AbbyOrchi1": "I'm really nervous, but also really, really excited.$h#$e#I wonder if they'll let me keep them in a jar...$0.",
+				"eventSeen_{{ModId}}_NighttimeSwimming_10h": "*blushes* I had a really nice time with you last night.$l#$e#We should do it again sometime...$l",
+				"fishCaught_128": "Hey, @, I heard you caught a pufferfish.$h#$b#I just think they're neat.$h",
+				"cc_Bridge_memory_oneday": "I saw that that bridge across the lake got fixed.#$b#I heard that guy with the eyepatch talking about some really dangerous cave over there.#$b#I'm curious...",
+				"dating_Abigail": "%Abigail is blushing, but {{Lowercase: {{AbbyPronoun_Subjective}}}} look{{AbbyPronoun_VerbForm}} happy.",
+				"questComplete_18": "I heard you reached the bottom of the mines, @.#$b#$query PLAYER_FRIENDSHIP_POINTS Current Abigail 2000#You're so h- COOL!$l#$b#You're so cool...$l|You're so cool!$h",
+				"questComplete_108": "Mom says you gave her the pumpkin we carved.#$e#Thanks!$h",
+				"questComplete_128_memory_oneweek": "Thanks again for finding mom's necklace, @.#$b#Wait, you didn't tell her I lost it, right?",
+				"firstVisit_WizardHouseBasement": "Did you find any sort of transforming magic recently, @?#$e#Huh, why do I ask?#$b#Um... no reason..."
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries": {
+				"Introduction": "Hello! You must be @, the new farmer. I'm Caroline.#$e#My husband runs the general store here. And have you met my daughter, Abigail? {{AbbyPronoun_Contraction_IsAre}} the pale one with the purple hair.",
+				"dating_Abigail_memory_oneday": "Abby told me that you and {{Lowercase: {{AbbyPronoun_Objective}}}} are seeing each other. That's sweet!",
+				"Mon8": "#$1 Caroline23#When we first moved to Pelican Town I would take secret walks to the Wizard's tower. Don't tell Pierre, he has jealousy issues.#$e#Abigail was born about a year after we moved to Pelican Town. I wonder if {{Lowercase: {{AbbyPronoun_Subjective}}}}'ll ever experience life outside the valley?",
+				"Sat_inlaw_Abigail": "Dinner's been a lot quieter since Abigail moved out...#$e#No, not because {{Lowercase: {{AbbyPronoun_Subjective}}}} used to chew with {{Lowercase: {{AbbyPronoun_Possessive}}}} mouth open!$h",
+				"summer_Sat": "Is it just me, or does Abigail look a little pale?#$e#Maybe I'm just worrying about {{Lowercase: {{AbbyPronoun_Objective}}}} too much.",
+				"summer_Sat_inlaw_Abigail": "How's Abigail's health? {{Lowercase: {{AbbyPronoun_ContractionHasHave}}}} always been such a pale girl. Hopefully the farm lifestyle puts a little color in {{Lowercase: {{AbbyPronoun_Possessive}}}} cheeks.",
+				"fall_Mon_inlaw_Abigail": "Abby was taking online classes here, but I don't think {{Lowercase: {{AbbyPronoun_Possessive}}}} heart was really in it...#$e#{{AbbyPronoun_Contraction_IsAre}} a free spirit, like I was before I met Pierre. {{AbbyPronoun_Contraction_IsAre}} probably having the time of {{Lowercase: {{AbbyPronoun_Possessive}}}} life on your farm.",
+				"Mon": "I wish Abby wouldn't spend so much time in {{Lowercase: {{AbbyPronoun_Possessive}}}} room.",
+				"Sat2": "Abby's always had a strange interest in the occult. I'm not sure where {{Lowercase: {{AbbyPronoun_Subjective}}}} gets it from...",
+				"fall_Mon": "Fall is Abby's favorite season, so I'm hoping {{Lowercase: {{AbbyPronoun_Subjective}}}}'ll come out of her room more often.",
+				"winter_Sat": "Don't you think Abby would look better with {{Lowercase: {{AbbyPronoun_Possessive}}}} natural hair color?#$e#{{AbbyPronoun_Subjective}} used to have light chestnut-colored hair."
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries": {
+				"eventSeen_4": "Abigail's going through a rebellious phase... I get it.#$e#{{AbbyPronoun_Subjective}}'ll wise up when {{Lowercase: {{AbbyPronoun_HasHave}}}} to make {{Lowercase: {{AbbyPronoun_Possessive}}}} first mortgage payment!$h",
+				"Mon4_inlaw_Abigail": "Hi, @. How's Abigail doing? The shop hasn't been the same without {{Lowercase: {{AbbyPronoun_Objective}}}}..."
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": {
+				"eventSeen_{{ModId}}_AbigailComingOut_memory_oneweek": "Do you think when I grow up I could be a girl like Abigail?"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"AbigailInMineFlute": "%Abigail is lost in {{Lowercase: {{AbbyPronoun_Possessive}}}} music..."
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/MovieReactions",
+			"Entries": {
+				"Caroline_like_AfterMovie": "That wasn't bad! I'll have to ask Abigail about it when I'm home, I'm sure {{Lowercase: {{AbbyPronoun_ContractionHasHave}}}} seen it.$h"
 			}
 		}
 	]

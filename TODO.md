@@ -8,3 +8,5 @@
 - Post event dialogues
 - More lines in general
 - Sebastian, Sam, Caroline, and Pierre dialogue edits + additions
+#Config
+- She/They Abby option
